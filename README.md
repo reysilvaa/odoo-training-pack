@@ -19,6 +19,7 @@ Belajar membangun modul Odoo dari nol — mulai dari struktur dasar sampai multi
 Modul pertama. Mencakup semua konsep dasar yang dibutuhkan sebelum masuk ke modul yang lebih kompleks.
 
 **Yang dipelajari:**
+
 - Struktur folder modul Odoo (`__manifest__`, `models`, `views`, `controllers`, `security`)
 - Membuat Model dan field (`Char`, `Boolean`, `Text`, `Many2one`)
 - Membuat tampilan backend otomatis: List, Form, Kanban, Search
@@ -28,6 +29,7 @@ Modul pertama. Mencakup semua konsep dasar yang dibutuhkan sebelum masuk ke modu
 - Multi-user: User hanya lihat data miliknya, Manager lihat semua
 
 **File utama:**
+
 ```
 todo_list/
 ├── __manifest__.py          # Deklarasi modul
@@ -48,6 +50,7 @@ todo_list/
 | `user` | `user` | User biasa — lihat task sendiri |
 
 **URL:**
+
 - Backend → `http://localhost:8070`
 - Frontend → `http://localhost:8070/tugas`
 - API → `http://localhost:8070/api/tasks`
