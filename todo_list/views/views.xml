@@ -5,8 +5,8 @@
     <!-- ==================== VIEWS ==================== -->
 
     <record id="view_task_list" model="ir.ui.view">
-      <field name="name">training.task.list</field>
-      <field name="model">training.task</field>
+      <field name="name">todo_list.task.list</field>
+      <field name="model">todo_list.task</field>
       <field name="arch" type="xml">
         <list decoration-muted="is_done" string="Tasks">
           <field name="name"/>
@@ -18,8 +18,8 @@
     </record>
 
     <record id="view_task_form" model="ir.ui.view">
-      <field name="name">training.task.form</field>
-      <field name="model">training.task</field>
+      <field name="name">todo_list.task.form</field>
+      <field name="model">todo_list.task</field>
       <field name="arch" type="xml">
         <form string="Task">
           <sheet>
@@ -38,8 +38,8 @@
     </record>
 
     <record id="view_task_kanban" model="ir.ui.view">
-      <field name="name">training.task.kanban</field>
-      <field name="model">training.task</field>
+      <field name="name">todo_list.task.kanban</field>
+      <field name="model">todo_list.task</field>
       <field name="arch" type="xml">
         <kanban>
           <field name="name"/>
@@ -62,8 +62,8 @@
     </record>
 
     <record id="view_task_search" model="ir.ui.view">
-      <field name="name">training.task.search</field>
-      <field name="model">training.task</field>
+      <field name="name">todo_list.task.search</field>
+      <field name="model">todo_list.task</field>
       <field name="arch" type="xml">
         <search>
           <field name="name"/>
@@ -81,7 +81,7 @@
 
     <record id="action_task" model="ir.actions.act_window">
       <field name="name">Todo Tasks</field>
-      <field name="res_model">training.task</field>
+      <field name="res_model">todo_list.task</field>
       <field name="view_mode">kanban,list,form</field>
       <field name="context">{'search_default_todo': 1}</field>
       <field name="help" type="html">

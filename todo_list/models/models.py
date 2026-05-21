@@ -2,7 +2,7 @@ from odoo import models, fields
 
 
 class TodoTask(models.Model):
-    _name = 'training.task'
+    _name = 'todo_list.task'
     _description = 'Todo Task'
     _order = 'is_done asc, id desc'
 
